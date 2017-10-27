@@ -1,0 +1,72 @@
+There are multiple ways of bringing up an angular application. 
+The easiest way and is using the angular comman line interface angular-cli
+
+Depending on which machine you are using and if you are behind a firewall or not there are multiple ways of using angular's quickstart seed (which is a barebones app to start working from)
+
+1.OPEN BASH AND check npm and node versions (should be node > 6 npm >3)
+2.npm install -g @angular/cli
+Alternately you can use the clone and create your project from the quickseed git
+> cd .
+> cd angular-cli
+> npm link
+
+Once you have established that anglular-cli is loaded 
+(test by typing ng --version)
+
+To create a project:
+>cd ..
+>ng new PROJECT-NAME (this takes a while loading up node_modules)
+>cd PROJECT-NAME
+
+>cd PROJECT-NAME
+>ng build
+
+--EXPRESS SET UP AND ADD TO PROJECT 
+>npm install express body-parser --save
+
+--CREATE A SERVER.JS file (outside of the src folder - in the main app)
+const express = require('express')
+const app = express()
+
+app.get('/', function (req, res) {
+  res.send('Hello World!')
+})
+
+app.listen(3000, function () {
+  console.log('Example app listening on port 3000!')
+})
+
+--install MONGO
+> npm install mongodb --save
+
+
+
+--
+To use the angular-cli for more organization : use like so:
+
+PA25566@SALTON /e/SUBLIME_sandbox/meanApp4/mongoApp/src/app (master)
+$ ng g component components/profile (CREATES A COMPONENT IN A COMPONENT FOLDER CALLED PROFILE)
+
+PA25566@SALTON /e/SUBLIME_sandbox/meanApp4/mongoApp/src/app (master)
+$ ng g service services/news-feed (CREATES A SERVICE IN A SERVICE  FOLDER CALLED NEWS-FEED)
+
+
+PA25566@SALTON /e/SUBLIME_sandbox/meanApp4/mongoApp/src/app (master)
+$ ng g class models/Article (CREATES A CLASS IN A MODEL FOLDER CALLED ARTICLE)
+
+**** MAKE SURE THE PATHS WHEN IMPORTING THE COMPONENT/SERVICE/MODEL ARE CORRECT 
+LIKE SO::::::import { UserDataService } from '../../services/user-data.service';
+
+ALSO IN  IN THE APPMODULE
+
+import { NewsFeedService } from './services/news-feed.service';
+import { UserDataService } from './services/user-data.service';
+
+
+
+
+
+
+
+
+

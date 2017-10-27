@@ -1,0 +1,22 @@
+.pf-container {
+  display:flex;
+}
+.pf-content{
+	padding:3vw;
+}
+
+.pf-grid-item {
+  margin-bottom: 1rem;
+}
+
+.pf-grid-item:last-child {
+  margin-bottom: 0;
+}
+
+ .pdf-sidebar {
+ 	display:flex;
+ 	flex-direction:column;
+ 	justify-content: center;
+ 	align-items: center;
+ 	text-align:center;
+ }

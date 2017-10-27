@@ -1,0 +1,49 @@
+@media only screen and (max-width: 900px) {
+  .pf-sidebar {
+   display:grid;
+   justify-content:center;
+   align-items:center;
+   text-align:center;
+  }
+
+  .pf-grid{
+  	display:grid;
+  	grid-template-columns:1fr;
+  	grid-template-rows:auto;
+  	grid-row-gap:1rem;
+  }
+
+  .image {
+  width: 25%;
+  height: auto;
+}
+}
+
+/*Desktop screen*/
+@media all and (min-width: 901px){
+	.pf-container {
+		grid-template-columns:1fr 2fr;
+		grid-template-rows:auto;
+	}
+	.pf-content{
+		grid-column-start:2;
+	}
+	.pf-grid{
+  	display:grid;
+  	grid-template-columns:1fr 1fr;
+  	grid-template-rows:auto;
+  	grid-gap:1rem;
+  }
+  .pf-sidebar {
+  	position:fixed;
+  	height:100vw;
+  	width:33vw;
+  
+  }
+  .image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+}

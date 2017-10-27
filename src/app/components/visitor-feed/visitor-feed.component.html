@@ -1,0 +1,8 @@
+<h2>Visitors</h2>
+  <p>See who has visited</p>
+    <h3>All registered users:</h3>
+    <ul>
+        <li *ngFor="let user of users">
+            {{user.name}} ({{user.age}})
+        </li>
+    </ul>

@@ -1,0 +1,13 @@
+<h2>Technology News</h2>
+  <p>Review Today's Headlines courtesy TechCrunch</p>
+  <button type="button" class="btn btn-info" (click)="changeShowStatus(false)">Toggle News Feed
+  </button>
+  <div id="demo" *ngIf="isCollapsed">
+    <div class="card" *ngFor="let article of articles">
+   <div class="card-body">
+     <h4>{{ article.title }}</h4>
+     <p> {{ article.description }} </p>
+     <p><a class="btn btn-default" href="{{article.url}}" target="_blank" role="button">View article »</a></p>
+  </div>
+</div>
+</div>

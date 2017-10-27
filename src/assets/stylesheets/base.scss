@@ -1,0 +1,40 @@
+@import 'variables';
+
+html {
+	box-sizing:border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: sans-serif;
+	padding: 0px;
+	margin:0px;
+}
+a {
+	color:$var_fontColorBlue;
+	font-weight:$var_makeBold;
+	text-decoration: none;
+}
+
+.pf-sidebar {
+  background-color: $var_backgroundColor;
+  padding: 5vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.pf-grid-item {
+  background-color:  $var_backgroundColor;
+  padding: 3vw;
+}
+
+img.portfolio {
+    height: auto;
+}
